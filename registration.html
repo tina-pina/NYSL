@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/nysl_3.css">
+  <title>Registration Form</title>
+</head>
+
+<body>
+
+  <!-- title bar start -->
+  <div class="title">
+    <h1>Northside Youth Soccer League</h1>
+  </div>
+  <div id="title_bar">
+    <div class="subtitle"><a href="index.html">Home</a></div>
+    <div class="subtitle"><a href="about.html">About</a></div>
+    <div class="subtitle"><a href="contact.html">Contact</a></div>
+    <div class="subtitle"><a href="rules.html">Rules of Play <br>& Policies</a></div>
+    <div class="subtitle"><a href="game_info.html">Game <br>Information</a></div>
+    <div class="subtitle"><a href="registration.html">Registration <br>Form</a></div>
+    <div class="subtitle"><a href="pictures.html">Images</a></div>
+  </div>
+  <!-- title bar end -->
+
+  <!-- start form -->
+  <form action="show_data.html" method="GET">
+    <div class="registration-container">
+      <h1>Registration Form</h1>
+
+      <div class="registration name">
+        <h4 class="sub-form-title">Personal Info</h4>
+        <div class="row">
+          <div class="box">
+            <p class="form-label form-margin">First Name</p>
+            <input class="form-input form-margin" type="text" name="first_name">
+          </div>
+          <div class="box">
+            <p class="form-label form-margin">Last Name</p>
+            <input class="form-input form-margin" type="text" name="last_name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <p class="form-label form-margin">Birthday</p>
+            <input class="form-input form-margin" type="date" name="birth">
+          </div>
+          <div class="box">
+            <p class="form-label form-margin">Gender</p>
+            <div class="gender-box">
+              <input type="radio" name="gender" value="Female">Female
+              <input type="radio" name="gender" value="Male">Male
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="registration address">
+        <h4 class="sub-form-title">Address</h4>
+        <div class="row">
+          <div class="box">
+            <p class="form-label form-margin">Street</p>
+            <input class="form-input form-margin" type="text" name="street address">
+          </div>
+          <div class="box">
+            <p class="form-label form-margin">City</p>
+            <input class="form-input form-margin" type="text" name="city">
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <p class="form-label form-margin">Zip</p>
+            <input class="form-input form-margin" type="text" name="zip">
+          </div>
+          <div class="box">
+            <p class="form-label form-margin">Country</p>
+            <input class="form-input form-margin" type="text" name="country">
+          </div>
+        </div>
+      </div>
+
+      <div class="registration contact">
+        <h4 class="sub-form-title">Contact</h4>
+        <div class="row">
+          <div class="box">
+            <p class="form-label form-margin">Parent/Gardian</p>
+            <input class="form-input form-margin" type="text" name="parent_guardian">
+          </div>
+          <div class="box">
+            <p class="form-label form-margin">Contact Phone</p>
+            <input class="form-input form-margin" type="text" name="contact_phone">
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <p class="form-label form-margin">Contact Email</p>
+            <input class="form-input form-margin" type="text" name="contact_mail">
+          </div>
+          <div class="box invisible">
+          </div>
+        </div>
+      </div>
+
+      <div class="registration school">
+        <h4 class="sub-form-title">Which elementary schools do you live near?</h4>
+        <div class="box">
+          <p class="form-label form-margin">First Closest School</p>
+          <select name="school1" class="form-select">
+            <option value="AJ Katzenmaier" selected="">AJ Katzenmaier</option>
+            <option value="Marjorie P Hart">Marjorie P Hart</option>
+            <option value="Greenbay">Greenbay</option>
+            <option value="North Elementary" selected="">North Elementary</option>
+            <option value="Howard A Yeager">Howard A Yeager</option>
+            <option value="South Elementary">South Elementary</option>
+          </select>
+        </div>
+        <div class="box">
+          <p class="form-label form-margin">Second Closest School</p>
+          <select name="school2" class="form-select">
+            <option value="AJ Katzenmaier" selected="">AJ Katzenmaier</option>
+            <option value="Marjorie P Hart">Marjorie P Hart</option>
+            <option value="Greenbay">Greenbay</option>
+            <option value="North Elementary" selected="">North Elementary</option>
+            <option value="Howard A Yeager">Howard A Yeager</option>
+            <option value="South Elementary">South Elementary</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="registration position-normal">
+        <h4 class="sub-form-title">What position(s) do you normally play? (check all that apply)</h4>
+        <div class="wide-box">
+          <label id="checkbox">
+            <input type="checkbox" name="positions1" value="Forward" checked=""> Forward
+            <input type="checkbox" name="positions1" value="Midfield"> Midfield
+            <input type="checkbox" name="positions1" value="Defense"> Defense
+            <input type="checkbox" name="positions1" value="Goalkeeper"> Goalkeeper
+          </label>
+        </div>
+      </div>
+
+      <div class="registration position-ideal">
+        <h4 class="sub-form-title">What position(s) do you want to play? (check all that apply)</h4>
+        <div class="wide-box">
+          <label id="checkbox">
+            <input type="checkbox" name="positions2" value="Forward" checked=""> Forward
+            <input type="checkbox" name="positions2" value="Midfield"> Midfield
+            <input type="checkbox" name="positions2" value="Defense"> Defense
+            <input type="checkbox" name="positions2" value="Goalkeeper"> Goalkeeper
+          </label>
+        </div>
+      </div>
+
+      <div class="registration position-ideal">
+        <h4 class="sub-form-title">Already Have a Uniform?</h4>
+        <div class="wide-box">
+          <label id="radio">
+            <input type="radio" name="uniform" value="yes" checked="">Yes
+            <input type="radio" name="uniform" value="no">No
+          </label>
+        </div>
+      </div>
+
+      <div class="registration position-ideal">
+        <h4 class="sub-form-title">Which is your size</h4>
+        <div class="wide-box">
+          <label id="radio">
+            <input type="radio" name="size" value="Youth Small" checked=""> Youth Small
+            <input type="radio" name="size" value="Medium"> Medium
+            <input type="radio" name="size" value="Youth Medium "> Youth Medium
+            <input type="radio" name="size" value="Large "> Large
+            <input type="radio" name="size" value="Youth Large"> Youth Large
+            <input type="radio" name="size" value="Extra-Large"> Extra-Large
+            <input type="radio" name="size" value="Small"> Small
+          </label>
+        </div>
+      </div>
+
+      <div class="permission">
+        <h4>Permission to Play</h4>
+        <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation. By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+      </div>
+
+      <div class="registration signature">
+        <h4 class="sub-form-title">SIGNATURE</h4>
+        <div class="wide-box">
+          <div>
+          <label>
+            Parent/Guardian Signature:
+            <input type="text" name="signature">
+          </label>
+          <label>
+            Date:
+            <input type="date" name="date">
+          </label>
+        </div>
+        </div>
+      </div>
+
+      <div class="button">
+        <input class="btn" type="submit" name="submit" value="Submit">
+      </div>
+
+    </div>
+  </form>
+
+  </div>
+</body>
+
+</html>
+
+
+
+
+<!-- <form action="show_data.html" method="GET">
+
+      <div class="flex-container">
+        <div class="element" style="font-weight: bold">
+          <br><span>What position(s) do you normally play? (check all that apply)</span><br>
+          <label id="checkbox">
+    <input type="checkbox" name="positions" value="Forward" checked=""> Forward
+    <input type="checkbox" name="positions" value="Midfield"> Midfield
+    <input type="checkbox" name="positions" value="Defense"> Defense
+    <input type="checkbox" name="positions" value="Goalkeeper"> Goalkeeper
+</label>
+        </div>
+        <div class="element" style="font-weight: bold">
+          <br><span>What position(s) do you want to play? (check all that apply)</span><br>
+          <label id="checkbox">
+            <input type="checkbox" name="positions" value="Forward" checked=""> Forward
+            <input type="checkbox" name="positions" value="Midfield"> Midfield
+            <input type="checkbox" name="positions" value="Defense"> Defense
+            <input type="checkbox" name="positions" value="Goalkeeper"> Goalkeeper
+          </label>
+        </div>
+      </div>
+
+      <div class="flex-container">
+        <div class="element" style="font-weight: bold">
+          <label id="radio">
+<input type="radio" name="uniform" value="Female">Already Have a Uniform
+</label>
+          <br><label for="radio">Jersey Size:</label>
+          <label id="radio">
+    <input type="radio" name="positions" value="Youth Small" checked=""> Youth Small
+    <input type="radio" name="positions" value="Medium"> Medium
+    <input type="radio" name="positions" value="Youth Medium "> Youth Medium
+    <input type="radio" name="positions" value="Large "> Large
+    <input type="radio" name="positions" value="Youth Large"> Youth Large
+    <input type="radio" name="positions" value="Extra-Large"> Extra-Large
+    <input type="radio" name="positions" value="Small"> Small
+  </label>
+        </div>
+        <div class="element" style="font-weight: bold">
+          <br><label for="radio">Shorts Size:</label>
+          <label id="radio">
+            <input type="radio" name="positions" value="Youth Small" checked=""> Youth Small
+            <input type="radio" name="positions" value="Medium"> Medium
+            <input type="radio" name="positions" value="Youth Medium "> Youth Medium
+            <input type="radio" name="positions" value="Large "> Large
+            <input type="radio" name="positions" value="Youth Large"> Youth Large
+            <input type="radio" name="positions" value="Extra-Large"> Extra-Large
+            <input type="radio" name="positions" value="Small"> Small
+          </label>
+        </div>
+      </div>
+
+
+      <div class="permission">
+        <h2 style="text-align: center; font-weight: bold; margin-bottom: 10px;">Permission to Play</h2>
+        <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide
+          by all the rules of the Northside Youth
+          Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer
+          and in consideration for the “League”
+          accepting the registrant for its soccer programs and activities, I hereby release, discharge,
+          and/or otherwise indemnify NYSL, their
+          employees and associated personnel and volunteers, including the facilities used for practices
+          and games, against any claim by or on behalf of the registrant as a result of the registrant’s
+          participation in the program and/or being transported to or from NYSL
+          sponsored activities, which transportation. By signing below, I hereby agree and authorize the above.
+          In addition, by signing below, I also acknowledge that I have read the
+          cancellation policy and agree to its terms.
+        </p>
+      </div>
+
+      <div class="flex-container">
+        <div class="signature" style="font-weight: bold">
+          <label>
+            Parent/Guardian Signature:
+            <input type="text" name="signature">
+          </label>
+          <label>
+            Date:
+            <input type="date" name="date">
+          </label>
+        </div>
+      </div>
+
+      <div class="button">
+        <input class="btn" type="submit" name="submit" value="Submit">
+      </div>
+
+  </b></b></form> -->
