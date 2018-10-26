@@ -302,25 +302,47 @@ table.three td:hover {
 }
 
 table.three th {
-  padding: 10px 20px;
+  padding: 30px 20px;
+  text-decoration: none;
 }
 
 table.three .columns {
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: bold;
+  color: white;
+  background-color: black;
+}
+
+table.three .columns th:nth-child(2) {
+  background-color: white;
+}
+
+table.three .columns {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: black;
 }
 
 table.three td {
   font-weight: 500;
+  padding: 20px 20px;
 }
 
 table.three a {
   text-decoration: none;
+  color: blue;
 }
 
 .last_part {
-  margin: 20px auto;
+  margin: 40px auto 60px auto;
   border: 3px black solid;
+  padding: 20px 0;
+}
+
+
+.last_part:nth-child(3n) {
+  font-weight: bold;
 }
 
 .redText {
@@ -359,8 +381,9 @@ table.three a {
 .venue-school a {
   font-weight: bold;
   text-decoration: none;
-  color: blue;
+  color: darkblue;
 }
+
 
 .venue-school p {
   font-weight: bold;
@@ -392,6 +415,14 @@ section iframe {
 #game_text {
   width: 85%;
   margin: 0 auto;
+}
+
+#game-info-title h1 {
+  padding-bottom: 20px;
+}
+
+#game-info-title p {
+ padding-bottom: 15px;
 }
 
 button.go_back_button {
@@ -445,8 +476,10 @@ registration form start
 }
 
 .registration-container .button {
+  display: flex;
   width: 100%;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   margin: 20px 0 0 0;
 }
 
@@ -454,10 +487,9 @@ registration form start
   background-color: black;
   color: white;
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
   width: 100%;
-  height: 30px;
-  text-align: center;
+  height: 40px;
   font-weight: bold;
   border: 1.5px solid black;
   font-size: 20px;
@@ -568,7 +600,14 @@ registration form start
   font-size: 20px;
 }
 /* permission end */
+ .black_box {
+   height: 20px;
+   background-color: black;
+ }
 
+ .white_box {
+   height: 20px;
+ }
 /*
 registration form end
 */
