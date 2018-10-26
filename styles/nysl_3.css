@@ -174,14 +174,12 @@ body {
 }
 
 
-
 #dropdown {
   position: relative;
   display: inline-block;
 }
 
 .dropdown-content {
-  /* opacity: 0; */
   padding: 12px 16px;
   z-index: 1;
 }
@@ -636,9 +634,7 @@ table#submitform {
   border: 2px solid black;
   color: #4a4a4d;
   font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin: 40px auto;
 }
 
 table#submitform th {
@@ -649,9 +645,15 @@ table#submitform th {
 table#submitform td {
   font-weight: bold;
   border-right: 1px solid black;
+  margin-bottom: 40px;
 }
 
 table#submitform td:hover {
   background-color: #2D893C;
   color: black;
+}
+
+#empty {
+  height: 20px;
+  width: 100%;
 }
